@@ -57,8 +57,9 @@ public class Main {
         var countOfEmployers = totalTime/timePerMan;
         System.out.println("Всего работников в компании - "+countOfEmployers+" человек");
         var newEmployers = 94;
-        var newTotalTime = timePerMan*(countOfEmployers+newEmployers);
-        System.out.println("Если в компании работает "+(countOfEmployers+newEmployers)+" человек, то всего "+newTotalTime+
+        countOfEmployers+=newEmployers;
+        var newTotalTime = timePerMan*countOfEmployers;
+        System.out.println("Если в компании работает "+countOfEmployers+" человек, то всего "+newTotalTime+
                 " часов работы может быть поделено между сотрудниками");
 
     }
