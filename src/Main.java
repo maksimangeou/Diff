@@ -47,8 +47,8 @@ public class Main {
         var secondBoxerWeight = 82.7;
         var totalWeight = firstBoxerWeight+secondBoxerWeight;
         System.out.println(totalWeight);
-        var weightDiffrence = secondBoxerWeight-firstBoxerWeight;
-        System.out.println(weightDiffrence);
+        var weightDifference = secondBoxerWeight-firstBoxerWeight;
+        System.out.println(weightDifference);
         //task 7
         var remains = secondBoxerWeight%firstBoxerWeight;
         System.out.println(remains);
