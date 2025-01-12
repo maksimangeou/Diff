@@ -7,7 +7,6 @@ public class Main {
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
-
         //task 2
         dog +=4;
         cat +=4;
@@ -15,7 +14,6 @@ public class Main {
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
-
         //task 3
         dog -= 3.5;
         cat -= 1.6;
