@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         //task1
-        int clientOS = 1;
+        int clientOS = 0;
         //vers1
         if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -25,38 +25,46 @@ public class Main {
         }
 
         //task2
-        int clienDeviceYear = 2015;
-        if (clientOS == 1) {
-            if (clienDeviceYear < 2015) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            }
-        } else if (clientOS == 0) {
-            if (clienDeviceYear < 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
+        int clientDeviceYear = 2015;
+        if (clientOS == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Мобильное устройство не опознано");
         }
 
         //task3
-        int year = 1900;
+        int year = 2200;
         int beginYear = 1584;
+        //vers1
         boolean isMultipleOfFour = year % 4 == 0;
         boolean isMultiplOfHundred = year % 100 != 0;
         boolean isMultiplOfFourHundred = year % 400 == 0;
-        if (year > beginYear) {
-            if ((isMultipleOfFour && isMultiplOfHundred) || isMultiplOfFourHundred) {
-                System.out.println("Год високосный");
-            } else {
-                System.out.println("Год не високосный");
-            }
-        } else {
+        if (year < beginYear) {
             System.out.println("недостаточно данных для подсчета");
+        } else if (isMultipleOfFour && isMultiplOfHundred || isMultiplOfFourHundred) {
+            System.out.println("Год високосный");
+        } else {
+            System.out.println("Год не високосный");
         }
+        //vers2
+        if (year < beginYear) {
+            System.out.println("недостаточно данных для подсчета");
+        } else if (year % 4 != 0) {
+            System.out.println("Год не високосный");
+        } else if (year % 400 == 0) {
+            System.out.println("Год високосный");
+        } else if (year % 100 == 0) {
+            System.out.println("Год не високосный");
+        } else {
+            System.out.println("Год високосный");
+        }
+
 
         //task4
         int deliveryDistance = 105;
