@@ -90,11 +90,11 @@ public class Main {
         System.out.println("При потере " + weightPerDay1 + " г/день уйдет " + day1 + " дней.");
         int day2 = weightToResultGram / weightPerDay2;
         System.out.println("При потере " + weightPerDay2 + " г/день уйдет " + day2 + " дней.");
-        int avgDay = (day1+day2)/2;
-        System.out.println("Среднее кол-во дней на потерю веса: "+avgDay);
+        int avgDay = (day1 + day2) / 2;
+        System.out.println("Среднее кол-во дней на потерю веса: " + avgDay);
         //не однозначная трактовка. Если необходимо среднее кол-во дней при средней потере веса, то:
-        int avgDay2 = (int) Math.ceil(weightToResultGram/((double) (weightPerDay1+weightPerDay2)/2));
-        System.out.println("Среднее кол-во дней на потерю веса: "+avgDay2);
+        int avgDay2 = (int) Math.ceil(weightToResultGram / ((double) (weightPerDay1 + weightPerDay2) / 2));
+        System.out.println("Среднее кол-во дней на потерю веса: " + avgDay2);
 
         //task8
         int percent = 10;
