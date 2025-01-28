@@ -10,8 +10,8 @@ public class Main {
             totalSumPerCent = totalSumPerCent + totalSumPerCent / 100;
             totalSumPerCent = totalSumPerCent + sumPerMonth;
             i++;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalSumPerCent + " рублей");
         }
-        System.out.println("Месяц " + i + ", сумма накоплений равна " + totalSumPerCent + " рублей");
         System.out.println();
 
         //task2
