@@ -8,7 +8,7 @@ public class Main {
         int sumPayout = 0;
         for (int i = 0; i < arrPayout.length; i++) {
             arrPayout[i] = i + ThreadLocalRandom.current().nextInt(1000 - i);
-            System.out.print(arrPayout[i]+ " ");
+            System.out.print(arrPayout[i] + " ");
             sumPayout += arrPayout[i];
         }
         System.out.println();
