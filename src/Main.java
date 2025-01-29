@@ -36,17 +36,16 @@ public class Main {
     }
 
     public static String checkDevice(int clientOS, int clientDeviceYear) {
-        int currentYear = LocalDate.now().getYear();
-        if (clientOS == 1 && clientDeviceYear < currentYear) {
+        if (clientOS == 1 && clientDeviceYear < 2015) {
             return "Установите облегченную версию приложения для Android по ссылке";
         }
-        if (clientOS == 1 && clientDeviceYear >= currentYear) {
+        if (clientOS == 1 && clientDeviceYear >= 2015) {
             return "Установите версию приложения для Android по ссылке";
         }
-        if (clientOS == 0 && clientDeviceYear < currentYear) {
+        if (clientOS == 0 && clientDeviceYear < 2015) {
             return "Установите облегченную версию приложения для iOS по ссылке";
         }
-        if (clientOS == 0 && clientDeviceYear >= currentYear) {
+        if (clientOS == 0 && clientDeviceYear >= 2015) {
             return "Установите версию приложения для iOS по ссылке";
         } else {
             return "Мобильное устройство не опознано";
